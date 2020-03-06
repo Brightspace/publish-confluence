@@ -11,6 +11,16 @@ inputs:
   docsdir:
     description: 'directory in the repo where the docs are located'
     default: ''
+  space:
+    description: 'Confluence space to publish the docs to'
+    default: ''
+  parent_page:
+    description: 'Confluence page to publish under'
+    default: ''
+  url:
+    description: 'Custom confluence url'
+    defalt: 'https://desire2learn.atlassian.net/'
+  
 runs:
   using: 'docker'
   image: 'Dockerfile'
